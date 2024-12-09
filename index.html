@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>トラプラ</title>
+</head>
+<body>
+    <h1>トラプラ</h1>
+    <p>あなたにベストな旅行プランを提案します</p>
+</body>
+</html
+    <h1>旅行診断スタート！ </h1>
+    <!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes/No チャート</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .chart {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            display: inline-block;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chart">
+        <h2>質問:あなたは旅行が好きですか？</h2>
+        <button class="btn yes" onclick="showAnswer('Yes')">Yes</button>
+        <button class="btn no" onclick="showAnswer('No')">No</button>
+        <p id="answer"></p>
+    </div>
+
+    <script>
+        function showAnswer(answer) {
+            var message = "";
+            if (answer === 'Yes') {
+                message = "素晴らしい！プログラミングは楽しいですね！";
+            } else {
+                message = "それは残念です。ぜひプログラミングを試してみてください！";
+            }
+            document.getElementById("answer").innerText = message;
+        }
+    </script>
+
+</body>
+</html>
+
+    
